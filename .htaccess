@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteBase /Apli11868/
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+)$ index.php?uri=$1 [QSA,L]
+
+Options All -Indexes
+
